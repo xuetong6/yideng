@@ -1,0 +1,107 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body {
+	background: #a4c89c;
+}
+.main {
+	padding: 200px;
+}
+.clear {
+	zoom: 1
+}
+.clear:after {
+	display: block;
+	content: "";
+	clear: both
+}
+.bg_brown {
+	background: #ecbea4;
+}
+.bg_hui {
+	background: #b4adaa;
+}
+.hand {
+	width: 430px;
+	position: relative;
+	margin: 0px auto;
+}
+.hand_l {
+	width: 200px;
+	height: 150px;
+	border-top: 1px solid #b98263;
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	z-index: 10;
+}
+.hand_r {
+	float: right;
+	position: relative;
+}
+.hand_r span {
+	width: 250px;
+	height: 55px;
+	display: block;
+	border-radius: 15px 28px 28px 15px;
+	border: 1px solid #b98263;
+	margin-top: -1px;
+	box-shadow: -4px 0px 4px #fff inset;
+}
+.hand_r span.first {
+	transform: rotate(-60deg);
+	position: absolute;
+	top: -59px;
+	left: -19px;
+	border-bottom: 0;
+	border-left: 0;
+	width: 150px;
+}
+.hand_con {
+	width: 200px;
+	height: 185px;
+	position: absolute;
+	top: 12px;
+	left: 1px;
+	padding: 74px 50px;
+}
+.hand_con p {
+	font-size: 38px;
+	text-align: center;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	z-index: 20;
+	position: relative;
+	cursor: pointer;
+}
+.hand_con em {
+	color: #f00;
+	animation: mymove 2s infinite;
+	animation-iteration-count: 1;
+	position: absolute;
+	font-size: 30px;
+	opacity: 0;
+	top: 74px;
+	left: 117px;
+}
+/*+1移动动画*/
+@keyframes mymove {
+	0% {
+		top: 74px;
+		left: 117px;
+		opacity: 0;
+	}
+	1% {
+		top: 74px;
+		left: 117px;
+		opacity: 1;
+	}
+	100% {
+		top: -80px;
+		left: 180px;
+		opacity: 0;
+	}
+}
